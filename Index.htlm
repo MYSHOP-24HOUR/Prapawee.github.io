@@ -196,7 +196,7 @@ PP bunny
 
 <a href="product2.html" class="card-link">
 <div class="product-card">
-<img src="IMG_1686.jpeg" alt="สติ๊กเกอร์">
+<img src="IMG_1686.jpeg" alt="สติ๊กเกอร์"
 <h3>ตัวอย่างสติกเกอร์</h3>
 </div>
 </a>
