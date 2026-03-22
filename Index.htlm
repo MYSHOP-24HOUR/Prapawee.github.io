@@ -10,19 +10,12 @@
 
 <style>
 
-/* ===== Animation ===== */
+/* Animation */
 @keyframes fadeUp{
-  from{
-    opacity:0;
-    transform:translateY(20px);
-  }
-  to{
-    opacity:1;
-    transform:translateY(0);
-  }
+  from{opacity:0; transform:translateY(20px);}
+  to{opacity:1; transform:translateY(0);}
 }
 
-/* ===== Body (Pastel Pink NEW) ===== */
 body{
   margin:0;
   background:linear-gradient(
@@ -38,7 +31,6 @@ body{
   animation:fadeUp .7s ease;
 }
 
-/* Glow หวานนุ่ม */
 body::before{
   content:"";
   position:fixed;
@@ -51,7 +43,7 @@ body::before{
   z-index:-1;
 }
 
-/* ===== Navbar ===== */
+/* Navbar */
 .navbar{
   position:sticky;
   top:0;
@@ -64,14 +56,12 @@ body::before{
   box-shadow:0 3px 12px rgba(0,0,0,.08);
 }
 
-/* ===== Container ===== */
 .container{
   max-width:420px;
   margin:auto;
   padding:30px 20px;
 }
 
-/* ===== Logo ===== */
 .logo{
   width:120px;
   height:120px;
@@ -82,17 +72,13 @@ body::before{
   transition:.3s;
 }
 
-.logo:hover{
-  transform:scale(1.05);
-}
+.logo:hover{transform:scale(1.05);}
 
-/* ===== Title ===== */
 h1{
   color:#ff6fa5;
   font-family:'Mali',cursive;
 }
 
-/* ===== Button ===== */
 .button{
   display:block;
   margin:14px 0;
@@ -106,15 +92,10 @@ h1{
   transition:.25s;
 }
 
-.button:hover{
-  transform:translateY(-3px);
-}
+.button:hover{transform:translateY(-3px);}
+.button:active{transform:scale(.95);}
 
-.button:active{
-  transform:scale(.95);
-}
-
-/* ===== Product Scroll ===== */
+/* Product Scroll */
 .product-scroll{
   display:flex;
   overflow-x:auto;
@@ -123,16 +104,10 @@ h1{
   scroll-snap-type:x mandatory;
 }
 
-.product-scroll::-webkit-scrollbar{
-  display:none;
-}
+.product-scroll::-webkit-scrollbar{display:none;}
 
-.card-link{
-  text-decoration:none;
-  color:inherit;
-}
+.card-link{text-decoration:none;color:inherit;}
 
-/* ===== Product Card ===== */
 .product-card{
   min-width:230px;
   background:white;
@@ -143,9 +118,7 @@ h1{
   transition:.3s;
 }
 
-.product-card:hover{
-  transform:translateY(-8px);
-}
+.product-card:hover{transform:translateY(-8px);}
 
 .product-card img{
   width:100%;
@@ -157,7 +130,6 @@ h1{
   font-family:'Mali',cursive;
 }
 
-/* ===== Footer ===== */
 .footer{
   margin-top:40px;
   padding:25px;
@@ -170,9 +142,7 @@ h1{
 
 <body>
 
-<div class="navbar">
-PP bunny
-</div>
+<div class="navbar">PP bunny</div>
 
 <div class="container">
 
@@ -196,7 +166,7 @@ PP bunny
 
 <a href="product2.html" class="card-link">
 <div class="product-card">
-<img src="IMG_1686.jpeg" alt="สติ๊กเกอร์"
+<img src="IMG_1686.jpeg" alt="สติ๊กเกอร์">
 <h3>ตัวอย่างสติกเกอร์</h3>
 </div>
 </a>
@@ -212,6 +182,5 @@ PP bunny
 </div>
 
 </div>
-
 </body>
 </html>
