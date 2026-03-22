@@ -190,36 +190,38 @@ h1{
 <body>
 
 <div class="navbar">
-🍭 Candy Shop
+PP bunny
 </div>
 
 <div class="container">
 
-<img class="logo" src="663BD7F6-F626-4873-BCE0-819856CFC4B8.jpeg">
+<img class="logo" src="IMG_1684.jpeg">
 
-<h1>choose to buy</h1>
+<h1>สนใจสินค้าๆสอบถามเพิ่มเติมได้นะคะ</h1>
 
-<a class="button" href="product1.html"> ตย โน้ต/a>
-<a class="button" href="product2.html">ตยสติ้กเก้อ</a>
+<a class="button" href="product1.html">ตัวอย่างโน้ตiPhone/iPad </a>
+<a class="button" href="product2.html">ตัวอย่างสติกเกอร์</a>
 
 
 <h2 style="color:#ff4fa3;">Suggested Products</h2>
 
 <div class="product-scroll">
 
+/* ===== การ์ดสินค้าแนะนำ ===== */
+
 <a href="product1.html" class="card-link">
 <div class="product-card">
-<img src="รอแก้">
-<h3>ตัวอย่างโน้ต</h3>
-<p class="price">฿</p>
+<img src="IMG_1685.jpeg">
+<h3>ตัวอย่างโน้ตiPhone/iPad</h3>
+<p class="price"></p>
 </div>
 </a>
 
 <a href="product2.html" class="card-link">
 <div class="product-card">
-<img src="รอแก้">
-<h3>สติ้กเก้อ</h3>
-<p class="price">259฿<
+<img src="IMG_1686.jpeg">
+<h3>ตัวอย่างสติ๊กเกอร์</h3>
+<p class="price"><
 </div>
 </a>
 
