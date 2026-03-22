@@ -1,16 +1,16 @@
 <!DOCTYPE html>
-<html>
+<html lang="th">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Candy Shop</title>
+<title>PP bunny</title>
 
 <link href="https://fonts.googleapis.com/css2?family=Mali:wght@400;600&family=Kanit:wght@400;500;600&display=swap" rel="stylesheet">
 
 <style>
 
-/* ===== Animation เปิดเว็บ ===== */
+/* ===== Animation ===== */
 @keyframes fadeUp{
   from{
     opacity:0;
@@ -22,109 +22,105 @@
   }
 }
 
-/* ===== พื้นหลัง ===== */
+/* ===== Body (Pastel Pink NEW) ===== */
 body{
   margin:0;
-  background:linear-gradient(180deg,#ffd6ec,#ffeaf6,#fff5fb);
+  background:linear-gradient(
+    180deg,
+    #fff0f6 0%,
+    #ffe4ee 45%,
+    #ffd9e8 75%,
+    #fff7fb 100%
+  );
+  background-attachment:fixed;
   font-family:'Kanit',sans-serif;
   text-align:center;
   animation:fadeUp .7s ease;
 }
 
-/* Glow */
+/* Glow หวานนุ่ม */
 body::before{
   content:"";
   position:fixed;
-  width:320px;
-  height:320px;
-  background:#ff9ed1;
-  filter:blur(130px);
+  width:340px;
+  height:340px;
+  background:#ffc2da;
+  filter:blur(140px);
   top:-120px;
   left:-120px;
   z-index:-1;
 }
 
-/* ===== ฟ้อน ===== */
-h1,h2,.navbar{
-  font-family:'Mali',cursive;
-}
-
-/* ===== NAVBAR ===== */
+/* ===== Navbar ===== */
 .navbar{
   position:sticky;
   top:0;
-  background:rgba(255,255,255,0.7);
-  backdrop-filter:blur(15px);
   padding:15px;
+  background:rgba(255,255,255,.65);
+  backdrop-filter:blur(15px);
+  font-family:'Mali',cursive;
   font-weight:600;
-  color:#ff4fa3;
+  color:#ff6fa5;
   box-shadow:0 3px 12px rgba(0,0,0,.08);
-  animation:fadeUp .6s ease;
 }
 
-/* ===== container ===== */
+/* ===== Container ===== */
 .container{
   max-width:420px;
   margin:auto;
   padding:30px 20px;
 }
 
-/* ===== โลโก้ ===== */
+/* ===== Logo ===== */
 .logo{
   width:120px;
   height:120px;
   border-radius:50%;
   object-fit:cover;
   margin-bottom:15px;
-  box-shadow:0 10px 25px rgba(0,0,0,.18);
+  box-shadow:0 10px 25px rgba(0,0,0,.15);
   transition:.3s;
 }
 
 .logo:hover{
-  transform:scale(1.05) rotate(2deg);
+  transform:scale(1.05);
 }
 
-/* ===== หัวข้อ ===== */
+/* ===== Title ===== */
 h1{
-  color:#ff4fa3;
+  color:#ff6fa5;
+  font-family:'Mali',cursive;
 }
 
-/* ===== ปุ่มแบบเดิม (Glass Style) ===== */
+/* ===== Button ===== */
 .button{
   display:block;
   margin:14px 0;
   padding:16px;
   border-radius:22px;
   text-decoration:none;
-  color:#ff4fa3;
+  color:#ff6fa5;
   font-weight:500;
-
-  background:rgba(255,255,255,0.85);
-  backdrop-filter:blur(10px);
-
-  box-shadow:
-    0 4px 12px rgba(0,0,0,0.12),
-    inset 0 1px 1px rgba(255,255,255,0.7);
-
+  background:rgba(255,255,255,0.9);
+  box-shadow:0 4px 12px rgba(0,0,0,.12);
   transition:.25s;
 }
 
 .button:hover{
-  transform:translateY(-2px);
+  transform:translateY(-3px);
 }
 
 .button:active{
   transform:scale(.95);
 }
 
-/* ===== Scroll สินค้า ===== */
+/* ===== Product Scroll ===== */
 .product-scroll{
   display:flex;
   overflow-x:auto;
   gap:18px;
   padding:18px 6px;
   scroll-snap-type:x mandatory;
-  scroll-behavior:smooth;
 }
 
 .product-scroll::-webkit-scrollbar{
@@ -136,7 +132,7 @@ h1{
   color:inherit;
 }
 
-/* ===== การ์ดสินค้า ===== */
+/* ===== Product Card ===== */
 .product-card{
   min-width:230px;
   background:white;
@@ -148,40 +144,25 @@ h1{
 }
 
 .product-card:hover{
-  transform:translateY(-8px) scale(1.02);
-  box-shadow:0 18px 35px rgba(0,0,0,.18);
+  transform:translateY(-8px);
 }
 
 .product-card img{
   width:100%;
   border-radius:16px;
-  transition:.3s;
-}
-
-.product-card:hover img{
-  transform:scale(1.05);
 }
 
 .product-card h3{
-  color:#ff4fa3;
+  color:#ff6fa5;
   font-family:'Mali',cursive;
-}
-
-.price{
-  color:#555;
-  font-weight:600;
 }
 
 /* ===== Footer ===== */
 .footer{
-  margin-top:45px;
-  padding:28px;
+  margin-top:40px;
+  padding:25px;
   font-size:14px;
-  color:#888;
-  background:rgba(255,255,255,.65);
-  backdrop-filter:blur(12px);
-  border-radius:30px 30px 0 0;
-  animation:fadeUp 1s ease;
+  color:#777;
 }
 
 </style>
@@ -195,36 +176,30 @@ PP bunny
 
 <div class="container">
 
-<img class="logo" src="IMG_1684.jpeg">
+<img class="logo" src="IMG_1684.jpeg" alt="logo">
 
-<h1>สนใจสินค้าๆสอบถามเพิ่มเติมได้นะคะ</h1>
+<h1>สนใจสินค้า สอบถามเพิ่มเติมได้นะคะ</h1>
 
-<a class="button" href="product1.html">ตัวอย่างโน้ตiPhone/iPad </a>
+<a class="button" href="product1.html">ตัวอย่างโน้ต iPhone/iPad</a>
 <a class="button" href="product2.html">ตัวอย่างสติกเกอร์</a>
 
-
-<h2 style="color:#ff4fa3;">Suggested Products</h2>
+<h2 style="color:#ff6fa5;">Suggested Products</h2>
 
 <div class="product-scroll">
 
-/* ===== การ์ดสินค้าแนะนำ ===== */
-
 <a href="product1.html" class="card-link">
 <div class="product-card">
-<img src="IMG_1685.jpeg">
-<h3>ตัวอย่างโน้ตiPhone/iPad</h3>
-<p class="price"></p>
+<img src="IMG_1685.jpeg" alt="โน้ต">
+<h3>ตัวอย่างโน้ต iPhone/iPad</h3>
 </div>
 </a>
 
 <a href="product2.html" class="card-link">
 <div class="product-card">
-<img src="IMG_1686.jpeg">
-<h3>ตัวอย่างสติ๊กเกอร์</h3>
-<p class="price"><
+<img src="IMG_1686.jpeg" alt="สติ๊กเกอร์">
+<h3>ตัวอย่างสติกเกอร์</h3>
 </div>
 </a>
-
 
 </div>
 
@@ -232,8 +207,8 @@ PP bunny
 <a class="button" href="https://line.me/ti/p/7fmAbuv6Yh">LINE</a>
 
 <div class="footer">
-ติดต่อสอบถามเพิ่มเติมแอดlineร้านได้เลยน้า🌷
-@212viwkk (มี@นำหน้า)
+ติดต่อสอบถามเพิ่มเติมแอด LINE ร้านได้เลยน้า 🌷<br>
+@212viwkk (มี @ นำหน้า)
 </div>
 
 </div>
