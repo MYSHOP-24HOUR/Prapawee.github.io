@@ -16,16 +16,16 @@
   to{opacity:1; transform:translateY(0);}
 }
 
-/* ===== NEW SOFT PASTEL BACKGROUND ===== */
+/* ===== PINK PASTEL BACKGROUND ===== */
 body{
   margin:0;
 
   background:linear-gradient(
     180deg,
-    #fff9fb 0%,
-    #fdf3ff 30%,
-    #f4f8ff 65%,
-    #fffdf7 100%
+    #ffb6d9 0%,   /* ชมพูพาสเทลด้านบน */
+    #ffd6ec 35%,  /* ชมพูหวาน */
+    #ffffff 70%,  /* ขาว */
+    #ffeaf6 100%  /* ชมพูอ่อน */
   );
 
   background-attachment:fixed;
@@ -34,13 +34,13 @@ body{
   animation:fadeUp .7s ease;
 }
 
-/* glow นุ่ม ๆ ไม่ชมพูจัด */
+/* glow ชมพูละมุน */
 body::before{
   content:"";
   position:fixed;
   width:380px;
   height:380px;
-  background:radial-gradient(circle,#ffd6ea,#dff1ff);
+  background:radial-gradient(circle,#ffd6ea,#fff0f7);
   filter:blur(150px);
   top:-140px;
   left:-120px;
@@ -53,7 +53,7 @@ body::before{
   position:sticky;
   top:0;
   padding:15px;
-  background:rgba(255,255,255,.7);
+  background:rgba(255,255,255,.75);
   backdrop-filter:blur(15px);
   font-family:'Mali',cursive;
   font-weight:600;
@@ -75,7 +75,7 @@ body::before{
   border-radius:50%;
   object-fit:cover;
   margin-bottom:15px;
-  box-shadow:0 10px 25px rgba(0,0,0,.12);
+  box-shadow:0 10px 25px rgba(255,182,217,.35);
   transition:.3s;
 }
 
@@ -96,8 +96,8 @@ h1{
   text-decoration:none;
   color:#ff6fa5;
   font-weight:500;
-  background:rgba(255,255,255,0.92);
-  box-shadow:0 6px 18px rgba(0,0,0,.08);
+  background:rgba(255,255,255,0.95);
+  box-shadow:0 6px 18px rgba(255,182,217,.35);
   transition:.25s;
 }
 
@@ -124,7 +124,7 @@ h1{
   border-radius:24px;
   padding:15px;
   scroll-snap-align:center;
-  box-shadow:0 12px 28px rgba(0,0,0,.08);
+  box-shadow:0 12px 28px rgba(255,182,217,.35);
   transition:.3s;
 }
 
